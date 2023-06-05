@@ -15,74 +15,90 @@ a {
 html{
    font-family:  'Rubik', sans-serif;
    font-weight: 400;
-   line-height: 1;
+   line-height: 1.2;
    font-size: 16px;
    box-sizing: border-box;
    scroll-behavior: smooth;
    color: #4F5665;
+   background-color: #E5E5E5;
 }
 .container {
    max-width: 1160px;
    margin: 0px auto;
    padding: 0 10px;
 }
+strong {
+   font-weight: 700;
+}
 /* -----------------------------HEADER */
+header{
+   position: fixed;
+   left: 0;
+   right: 0;
+   top: 0;
+}
 .header {
+   width: 100%;
    display: flex;
-   height: 80px;
-   max-width: 1206px;
-   margin: 0px auto;
    justify-content: space-between;
    align-items: center;
-   padding: 0 10px;
+   
+   z-index: 50;
+   background-color: #E5E5E5;
 }
-.header__nav, .footer__nav{
+.header__nav{
+   width: 100%;
    display: flex;
-   gap: 73px;
+   justify-content: space-between;
    align-items: center;
+   padding: 30px 0;
 }
-.header__logo, .footer__logo {
-   width: 26px;
-   height: 26px;
-   border-radius: 50%;
-   background-color: #5E81FE;
+.header__logo {
+   font-weight: 500;
+   font-size: 20px;
+   display: flex;
+   align-items: center;
+   gap: 10px;
 }
-.header__items, .footer__items {
+.header__items {
     display: flex;
-   gap: 42px;
-   font-size: 12px;
+   column-gap: 40px;
+   line-height: 118.75%; /* 19/16 */
+}
+.header__item:hover{
    font-weight: 500;
 }
-.header__item:hover, .footer__item:hover{
-   color: #5E81FE !important;
-   /* font-weight: 700; */
-}
-.social__items-img:hover {
-   filter: invert(49%) sepia(18%) saturate(2231%) hue-rotate(192deg) brightness(102%) contrast(102%);
-}
-.social__items, .footer__items {
+.buttons__items{
    display: flex;
-   gap: 34px;
+   font-weight: 500; 
+   color: #0B132A;
+
+}
+.button__item{
+   padding: 13px 45px;
+   border: 1px solid transparent;
+   border-radius: 50px;
+
+}
+.button__item:hover{
+   border-color: #F53855;
+   color: #F53855;
+
 }
 .header__body-burger {
    display: flex;
    align-items: center;
+   
 }
-.header__body-social, .footer__body-social{
+.header__body-buttons{
    display: flex;
-   gap: 44px;
+   
    align-items: center;
 }
 .header__blue-img{
    filter: invert(100%) sepia(92%) saturate(1017%) hue-rotate(178deg) brightness(84%) contrast(83%) !important;
 }
-.header__btn, .footer__btn {
-   padding: 13px 16px;
-   background-color: #D2E1FF;
-   border-radius: 2px;
-   color: #3A79FF;
-   font-weight: 700;
-}
+
 .burger {
    display: none;
    position: relative;
@@ -152,6 +168,6 @@ html{
    }
 }
 @media (max-width: 600px){
-   .social__nav {display: none;}
-   .header__body-social {gap: 30px;}
+   .buttons__nav {display: none;}
+   .header__body-buttons {gap: 30px;}
 }
