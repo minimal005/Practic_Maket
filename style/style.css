@@ -263,58 +263,7 @@ header{
    color: #4F5665;
 }
 
-@media (max-width:850px){
-   .about {
-      padding-top: 170px;
-   }
-   .about__body {
-      flex-direction: column-reverse;
-      row-gap: 50px;
-   }
-   .about__wrapper, .about__img{
-      flex-basis: 90%;
-   width: 90%;
-   }
-   .about__body {
-      margin-bottom: 50px;
-   }
-   .about__footer{
-      padding: 30px;
-   }
-}
-@media (max-width:600px){
-   .about {
-      padding-top: 150px;
-   }
-   .about__wrapper, .about__img{
-      flex-basis: 100%;
-   width: 100%;
-   }
-   .about__title{
-      max-width: 80%;
-      font-size: 40px;
-      line-height: 120%;
-   }
-   .about__footer{
-      padding: 20px 10px 40px;
-   }
-   .footer-about__items{
-      flex-direction: column;
-      row-gap: 10px;
-   }
-   .footer-about__item:nth-child(1){
-      align-self: start;
-   }
-   .footer-about__item:nth-child(2){
-      align-self: center;
-   }
-   .footer-about__item:nth-child(3){
-      align-self: end;
-   }
-   .about__body {
-      margin-bottom: 50px;
-   }
-}
+
 /* ------------------------------------FEATURES */
 .features{
    background: linear-gradient(to bottom, #f9f6f6 0%,#ffffff 40%);
@@ -349,4 +298,73 @@ header{
 .features__wrapper{
    display: flex;
    justify-content: flex-end;
+}
+
+
+@media (max-width:850px){
+   .about {
+      padding-top: 170px;
+   }
+   .about__body {
+      flex-direction: column-reverse;
+      row-gap: 50px;
+   }
+   .features__body{
+      flex-direction: column;
+      row-gap: 50px;
+      padding: 50px 0;
+   }
+   .about__wrapper, .about__img, .features__wrapper, .features__img{
+      flex-basis: 90%;
+      width: 90%;
+   }
+   .about__body, .features__body {
+      margin-bottom: 50px;
+   }
+   .about__footer{
+      padding: 30px;
+   }
+   .features__title{
+      max-width: 80%;
+   }
+   .features__text{
+      max-width: 90%;
+   }
+}
+@media (max-width:600px){
+   .about {
+      padding-top: 150px;
+   }
+   .about__wrapper, .about__img, .features__img, .features__wrapper{
+      flex-basis: 100%;
+   width: 100%;
+   }
+   .about__title{
+      max-width: 80%;
+      font-size: 40px;
+      line-height: 120%;
+   }
+   .about__footer{
+      padding: 20px 10px 40px;
+   }
+   .footer-about__items{
+      flex-direction: column;
+      row-gap: 10px;
+   }
+   .footer-about__item:nth-child(1){
+      align-self: start;
+   }
+   .footer-about__item:nth-child(2){
+      align-self: center;
+   }
+   .footer-about__item:nth-child(3){
+      align-self: end;
+   }
+   .about__body {
+      margin-bottom: 50px;
+   }
+
+   .features__text{
+      max-width: 100%;
+   }
 }
