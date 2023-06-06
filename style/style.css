@@ -99,8 +99,6 @@ header{
    display: flex;
    align-items: center;
 }
-
-
 .burger {
    display: none;
    position: relative;
@@ -146,7 +144,8 @@ header{
 .open {
    display: flex !important;
 }
-@media (max-width: 900px) {
+
+@media (max-width: 950px) {
    .burger {
       display: flex;
    }
@@ -265,7 +264,7 @@ header{
 
 
 /* ------------------------------------FEATURES */
-.features{
+.features, .price{
    background: linear-gradient(to bottom, #f9f6f6 0%,#ffffff 40%);
 }
 .features__body{
@@ -367,4 +366,89 @@ header{
    .features__text{
       max-width: 100%;
    }
+}
+/* -------------------------------PRICE */
+.price__body {
+   padding: 80px 0;
+   text-align: center;
+}
+
+.price__title{
+   margin-bottom: 20px;
+} 
+
+.price__text {
+   line-height: 188%;
+   margin-bottom: 60px;
+   max-width: 555px;
+}
+
+.price__wrapper {
+   display: flex;
+   justify-content: space-around;
+}
+
+.price__item {
+   flex-basis: 30%;
+   max-width: 30%;
+   border: 2px solid #DDDDDD;
+border-radius: 10px;
+padding: 79px 10px 50px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+
+.item-price__img {
+   max-width: 145px;
+   margin: 0px auto;
+}
+.item-price__img img{
+   display: inline-block;
+   width: 100%;
+   margin-bottom: 30px;
+}
+
+.item-price__title {
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 166.666667%; /* 30/18 */
+   color: #0B132A;
+   margin-bottom: 30px;
+}
+.item-price__list{
+   text-align: left;
+   max-width: 192px;
+   margin: 0px auto;
+   margin-bottom: 50px;
+}
+.item-price li + li {
+   margin-top: 15px;
+}
+.item-price li::before{
+   margin-left: 10px;
+   content: '';
+   display: inline-block;
+   width: 14px;
+   height: 9px;
+   transform: translate(-10px, 5px);
+   background-image: url('../img/price/Vector.svg');
+}
+.item-price__count {
+   font-weight: 500;
+   font-size: 25px;
+   color: #0B132A;
+   margin-bottom: 25px;
+}
+
+.item-price__btn {
+   background: #FFFFFF;
+   border: 2px solid #F53838;
+   border-radius: 50px;
+   font-weight: 700;
+   line-height: 118.75%; /* 19/16 */
+   color: #F53838;
+   padding: 13px 62px;
+   margin: auto auto o auto;
 }
