@@ -523,3 +523,51 @@ color: #4F5665;
       display: block;
    }
 }
+/* -----------------------------------TEST */
+.test {
+   padding: 80px 0;
+}
+
+.test__title {
+   
+   max-width: 383px;
+   margin: 0px auto;
+   text-align: center;
+   margin-bottom: 25px;
+}
+
+.test__text {
+   font-size: 16px;
+   line-height: 187.5%; /* 30/16 */
+   max-width: 555px;
+   margin: 0px auto;
+   margin-bottom: 150px;
+   text-align: center;
+}
+
+.test__img {
+   max-width: 80%;
+   margin-bottom: 83px;
+   margin: 0px auto;
+}
+.test__img img {
+   width: 100%;
+}
+
+.test__footer {
+   padding: 25px 0;
+   max-width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.footer-test__item:hover .test__item-img {
+   transition: all 0.3s ease 0s;
+   filter: invert(33%) sepia(19%) saturate(6639%) hue-rotate(340deg) brightness(102%) contrast(92%);
+}
+.footer-test__item {
+   max-width: 170px;
+}
+.test__item-img{
+   width: 100%;
+}
