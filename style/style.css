@@ -46,9 +46,10 @@ header{
    left: 0;
    right: 0;
    top: 0;
-   background-color: white;
-   box-shadow: inset -1px -14px 21px -9px rgba(112, 112, 112, 0.81);
+   background-color: #fff;
+   box-shadow: inset -1px -14px 21px -6px rgba(214, 214, 214, 0.81);
 }
+
 .header {
    width: 100%;
    display: flex;
@@ -254,7 +255,10 @@ header{
    box-shadow: -2px 22px 25px -3px rgba(228, 228, 228, 0.81);
    border-radius: 10px;
 }
-
+.footer-about__items:hover{
+   box-shadow: -2px 10px 25px -3px rgba(228, 228, 228, 0.81);
+   transition: all 0.3s ease 0s;
+}
 .footer-about__item {
    display: flex;
    gap: 35px;
@@ -804,6 +808,10 @@ background-color: #F53838;
    justify-content: space-between;
    align-items: center;  
 }
+.help__wrapper:hover {
+   box-shadow: -2px 10px 25px -3px rgba(228, 228, 228, 0.81);
+   transition: all 0.3s ease 0s;
+}
 .help__title {
    max-width: 372px;
    margin-bottom: 20px;
@@ -819,12 +827,18 @@ background-color: #F53838;
    cursor: pointer;
    line-height: 156%;
    font-weight: 700;
+   border: 1px solid transparent;
 }
-
+.help__btn:hover{
+background-color: #fff;
+border: 1px solid rgb(245, 56, 56);
+color: rgb(245, 56, 56);
+transition: all 0.3s ease 0s;
+}
 /* --------------------------------FOOTER */
 .footer {
    background-color: #F8F8F8;
-   padding: 180px 0px;
+   padding: 180px 0px 80px;
 }
 
 .footer__body {
@@ -854,7 +868,7 @@ background-color: #F53838;
 }
 @media (max-width: 850px){
    .footer {
-      padding: 400px 0px;
+      padding: 400px 0px 100px;
    }
    .help__wrapper{
       flex-direction: column;
@@ -895,9 +909,13 @@ background-color: #F53838;
    justify-content: center;
    box-shadow: -2px 7px 25px -3px rgba(112, 112, 112, 0.5);
 }
+.footer__facebook:hover{
+   box-shadow: -2px 10px 25px -3px rgba(228, 228, 228, 0.81);
+   transition: all 0.3s ease 0s;
+}
 .footer__facebook img{
-width: 50%;
-filter: invert(55%) sepia(81%) saturate(7239%) hue-rotate(345deg) brightness(104%) contrast(92%);
+   width: 50%;
+   filter: invert(55%) sepia(81%) saturate(7239%) hue-rotate(345deg) brightness(104%) contrast(92%);
 }
 
 .footer__copyright {
@@ -905,12 +923,22 @@ filter: invert(55%) sepia(81%) saturate(7239%) hue-rotate(345deg) brightness(104
    color: #AFB5C0;
 }
 
-.footer__items 
+.footer__items {
+   display: flex;
+   gap: 125px;
+}
 
-.footer__item 
 
-.item-footer 
+.item-footer__title {
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 166.666667%; /* 30/18 */
+   margin-bottom: 20px;
+}
 
-.item-footer__title 
-
-.item-footer__list 
+.item-footer__list li{
+   line-height: 187.5%; /* 30/16 */
+}
+.item-footer__list li + li {
+   margin-top: 10px;
+}
