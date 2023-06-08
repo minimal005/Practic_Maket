@@ -41,7 +41,6 @@ strong {
 }
 /* -----------------------------HEADER */
 header{
-  
    background-color: #fff;
    box-shadow: inset -1px -14px 21px -6px rgba(214, 214, 214, 0.81);
 }
@@ -147,6 +146,7 @@ header{
    .burger {
       display: flex;
    }
+ 
    .burger__nav {
       display: none;
       flex-direction: column;
@@ -160,6 +160,10 @@ header{
       padding: 50px 40px;
       background-color: #D2E1FF;
       opacity: 0.9;
+   }
+   .burger.active {
+      position: fixed;
+      right: 10px;
    }
    .header__items {
       flex-direction: column;
